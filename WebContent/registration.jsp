@@ -13,15 +13,18 @@
 <body>
 	<form action='Register' method="post" id="regform">
 		<fieldset style= "margin:auto text-align:center">
-			<p><label for="usnm">Username</label> <input type="text" name="username" id="usnm" required/></p>		
-			<p><label for="eml">Email</label> <input type="text" name="email" id="eml" required/></p>			
+			<p><label for="fstnm">Firstname</label> <input type="text" name="Firstname" id="fstnm" required/></p>
+			<p><label for="lstnm">Lastname</label> <input type="text" name="Lastname" id="lstnm" required/></p>
+			<p><label for="usnm">Username</label> <input type="text" name="username" id="usnm" required/></p>
 			<p><label for="psword">Password</label> <input type="password" id="psword" name="psword" required/></p>			
 			<p><label for="cfmpsword">Confirm Password</label> <input type="password" id="cfmpsword" name="cfmpsword" required/></p> 
+			<p><label for="adr">Adress</label> <input type="text" name="Adress" id="adr" required/></p>			
+			<p><label for="eml">Email</label> <input type="text" name="email" id="eml" required/></p>
 			<br>
 			<input class="submit" type="submit" value="Register"/> 
 		</fieldset>		
 	</form>
-	  <script>
+	<script>
 	$(document).ready(function(){
 		$("#regform").validate({
 			rules: {				
@@ -33,5 +36,6 @@
 		});		
 	});		
 	</script>
+	
 </body>
 </html>
